@@ -44,26 +44,26 @@ else:
 class Config:
     ADMIN = os.environ.get("ADMINS", '')
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-    API_ID = int(os.environ.get("API_ID", ''))
-    CHAT = int(os.environ.get("CHAT", ""))
+    API_ID = 3796974
+    CHAT = -1001597361595
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
     else:
         LOG_GROUP=None
     STREAM_URL=finalurl
-    ADMIN_ONLY=os.environ.get("ADMIN_ONLY", "N")
-    ARQ_API=os.environ.get("ARQ_API", "")
+    ADMIN_ONLY="Y"
+    ARQ_API="WPTSQF-OEAXKE-LEBXVB-ABAKYV-ARQ"
     REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", None)
     if REPLY_MESSAGE:
         REPLY_MESSAGE=REPLY_MESSAGE
     else:
         REPLY_MESSAGE=None
-    DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 15))
-    DELAY = int(os.environ.get("DELAY", 10))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
-    SESSION = os.environ.get("SESSION_STRING", "")
+    DURATION_LIMIT= 15
+    DELAY = 10
+    API_HASH = "9511d0112631f9990337eb724d1a7d0d"
+    BOT_TOKEN = "5119166187:AAFtcwpmOwFHC3DSsm9W3qPUjIhFxdN-unA" 
+    SESSION = "BQCo_i5B1NKstj_QpsK8p5gj9NM7TgnhoXhdILHMkofGqXumMrEs0TQamlQszj8Bo7FOTxp8XIaszx0qvu3W1QmFMxTAfQE26PBFvHfmfk9iZmmqBledBNNrm21ogQgZ7MyHi8d7PbbX-yre0CHmxiL4BWmgi7ZTLyknIgXmhoS04ExbzuvXwaYQntUNw7i-dq7J62cK3wdgWdUUaHdC6Hlyw9xODfwTrcBANeo_jqg1z6gWRbnFeKqzNdgdBXH7UvKjb-l9RedS1gchuz1syWwyVPLGl_1eabhFmJD9v5ZQRy5njU0Z9ahupFWS4pIfflN0l2k6S6IbPyjomAX2Wr5NV0PWxgA"
     playlist=[]
     msg = {}
 
